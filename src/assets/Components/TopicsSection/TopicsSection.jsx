@@ -47,7 +47,7 @@ const topics = [
 
 export default function TopicsSection() {
     return (
-        <section className="bg-white py-16">
+        <section  className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -65,9 +65,10 @@ export default function TopicsSection() {
                     {topics.map(({ id, iconUrl, title, description }) => (
                         <div
                             key={id}
-                            className="bg-white rounded-base shadow-lg p-8 w-100 h-100 flex flex-col items-center text-center"
+                            data-aos="fade-left"
+                            className="bg-white rounded-base shadow-lg p-8  flex flex-col items-center text-center"
                         >
-                            <div className="bg-green-600 rounded-full p-4 mb-6">
+                            <div className="bg-emerald-600 rounded-full p-4 mb-6">
                                 <img src={iconUrl} alt={title + ' icon'} className="w-20 h-20 object-contain" />
                             </div>
                             <h3 className="text-2xl font-bold text-slate-900 mb-3">{title}</h3>
@@ -79,7 +80,7 @@ export default function TopicsSection() {
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
                 <a
                     href="#"
-                    className="px-10 py-4 text-xl font-semibold text-white bg-green-600 rounded-full shadow-lg hover:bg-green-700 transition-transform duration-200 hover:scale-95"
+                    className="px-10 py-4 text-xl font-semibold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95"
                 >
                     Get the course
                 </a>

@@ -12,7 +12,7 @@ import {
 
 export default function FooterSection() {
   return (
-    <footer className="bg-white text-slate-700">
+    <footer className=" bg-white text-slate-700" data-aos="fade-in">
       {/* Top area: logo + social */}
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
@@ -21,7 +21,7 @@ export default function FooterSection() {
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src='src\assets\Images\comercify360Logocropped.png'
+              src='https://i.ibb.co/bgQdHcVb/comercify360-Logocropped.png'
               className="h-8 w-auto"
             />
           </a>
@@ -41,16 +41,16 @@ export default function FooterSection() {
       </div>
 
       {/* Main columns */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 pb-12">
         {/* Pages */}
         <div>
-          <h4 className="text-sm font-semibold text-green-600 uppercase mb-4">Pages</h4>
+          <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Pages</h4>
           <ul className="space-y-2 text-base">
-            {['Home', 'About the Teacher', 'Courses', 'Course', 'Video Page'].map((label) => (
+            {['Home', 'About the Teacher', 'Course', 'FAQs', 'Footer'].map((label) => (
               <li key={label} className="flex items-center">
                 <a href="#" className="hover:underline">{label}</a>
                 {['Courses', 'Course'].includes(label) && (
-                  <span className="ml-2 bg-green-600 text-white text-xs font-semibold px-2 py-0.5 rounded">eCommerce</span>
+                  <span className="ml-2 bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded">New</span>
                 )}
               </li>
             ))}
@@ -58,8 +58,8 @@ export default function FooterSection() {
         </div>
 
         {/* Utility Pages */}
-        <div>
-          <h4 className="text-sm font-semibold text-green-600 uppercase mb-4">Utility Pages</h4>
+        {/* <div>
+          <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Utility Pages</h4>
           <ul className="space-y-2 text-base">
             {['Style Guide', 'Start Here', '404 Not Found', 'Password Protected', 'Licenses'].map((label) => (
               <li key={label}>
@@ -67,29 +67,31 @@ export default function FooterSection() {
               </li>
             ))}
             <li className="mt-2">
-              <a href="#" className="text-green-600 font-semibold hover:underline">
+              <a href="#" className="text-red-600 font-semibold hover:underline">
                 Browse More Templates
               </a>
-              <div className="h-0.5 bg-green-600 w-24 mt-0.5" />
+              <div className="h-0.5 bg-red-600 w-24 mt-0.5" />
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Newsletter */}
         <div>
-          <h4 className="text-sm font-semibold text-green-600 uppercase mb-4">Marketing Newsletter</h4>
+          <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Newsletter</h4>
           <p className="text-base text-slate-600 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit dignissim arcu cursus tincidunt et odio enim aliquam.
+            Stay ahead of the curve with the latest in Amazon Ads, marketplace trends, and growth strategies.
+            Get curated insights, expert tips, and real-world brand case studies - delivered straight to your inbox.
+
           </p>
           <form className="flex flex-col sm:flex-row items-center gap-4">
             <input
               type="email"
               placeholder="Enter your Email"
-              className="flex-1 px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="flex-1 px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-600"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-green-600 text-white font-semibold rounded-full shadow hover:bg-green-700 transition"
+              className="px-6 py-3 bg-red-600 text-white font-semibold rounded-full shadow hover:bg-red-700 transition"
             >
               Subscribe
             </button>
@@ -100,10 +102,7 @@ export default function FooterSection() {
       {/* Footer bottom */}
       <div className="border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-slate-500 text-center">
-          © Copyright – Commercify360 | Designed by
-          <a href="#" className="text-green-600 hover:underline ml-1">Divyesh</a>
-          <span> – Powered by </span>
-          <a href="#" className="text-green-600 hover:underline">React.js</a>
+          © Copyright – Commercify360 
         </div>
       </div>
     </footer>

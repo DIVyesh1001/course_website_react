@@ -3,48 +3,47 @@ import React from 'react';
 const topics = [
   {
     id: 1,
-    title: 'Introduction to Marketing',
+    title: 'Master the Amazon Ads Ecosystem',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris blandit tempore gestas.',
+      'Get a complete understanding of Amazon’s advertising formats—Sponsored Products, Sponsored Brands, Sponsored Display, DSP, and Sponsored TV—and learn how each format supports different stages of the customer journey.',
   },
   {
     id: 2,
-    title: 'Growth Marketing',
+    title: 'Launch & Manage High-Performing Campaigns',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris blandit tempore gestas.',
+      'Learn how to set up campaigns step-by-step using the latest 2025 interface, including targeting, budgeting, and bidding strategies. Gain hands-on experience with campaign structure, performance tracking, and real-time dashboards.',
   },
   {
     id: 3,
-    title: 'Marketing Strategies',
+    title: 'Target the Right Shoppers',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris blandit tempore gestas.',
+      'Build effective keyword and audience targeting strategies using both automatic and manual methods. Discover how to reach high-intent shoppers with contextual, behavioral, and demographic signals powered by Amazon’s first-party data.',
   },
   {
     id: 4,
-    title: 'Marketing Scale & Automation',
+    title: 'Optimize, Scale & Build a Full-Funnel Strategy',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris blandit tempore gestas.',
+      'Track and improve key metrics like ACOS, ROAS, CTR, and conversion rate. Learn advanced techniques such as dayparting, new-to-brand metrics, and multi-format campaigns. Design full-funnel ad strategies to drive awareness, conversion, and loyalty across Amazon touchpoints.',
   },
 ];
 
 export default function LearnSection() {
   return (
-    <section className="bg-white py-16 my-15">
+    <section data-aos="fade-right" className="bg-white py-16 my-15">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-slate-900 mb-4">What will I learn?</h2>
         <p className="relative mx-auto max-w-2xl text-lg text-slate-600 mb-12 z-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris
-          blandit tempore gestas.
+          Gain practical, hands-on skills to launch, optimize, and scale high-performing Amazon ad campaigns across Sponsored Ads, DSP, and Sponsored TV.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left: Image */}
           <div className='relative w-full h-full'>
             {/* Decorative Half Circle */}
-            {/* <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full border-[20px] border-green-600 border-t-0 border-r-0 z-0"></div> */}
+            {/* <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full border-[20px] border-red-600 border-t-0 border-r-0 z-0"></div> */}
             <img
-              src="src\assets\Images\greenring.svg"
-              alt="Man at laptop"
+              src="https://i.ibb.co/MJCk2ZR/red-circle.png"
+              alt="red-ring"
               className="absolute -top-30 -left-50 w-100 h-100 z-0"
             />
             <img
@@ -62,7 +61,7 @@ export default function LearnSection() {
                 className="bg-slate-50 p-6 rounded-xl shadow-sm flex items-start gap-4"
               >
                 <div className="flex-shrink-0">
-                  <div className="h-10 w-10 flex items-center justify-center rounded-full bg-green-600 text-white font-bold">
+                  <div className="h-10 w-10 flex items-center justify-center rounded-full bg-red-600 text-white font-bold">
                     {topic.id}
                   </div>
                 </div>
@@ -79,7 +78,7 @@ export default function LearnSection() {
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <a
             href="#"
-            className="px-10 py-4 text-xl font-semibold text-white bg-green-600 rounded-full shadow-lg hover:bg-green-700 transition-transform duration-200 hover:scale-95"
+            className="px-10 py-4 text-xl font-semibold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95"
           >
             Get the course
           </a>

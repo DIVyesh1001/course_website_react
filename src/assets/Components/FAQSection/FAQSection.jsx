@@ -37,7 +37,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="bg-gray-50 py-16">
+    <section  className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
@@ -58,7 +58,7 @@ export default function FAQSection() {
               className="group bg-white shadow p-4"
             >
               <summary className="flex items-center gap-5 cursor-pointer list-none h-20">
-                <span className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full transition-transform group-open:rotate-45">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-100 text-red-600 rounded-full transition-transform group-open:rotate-45">
                   +
                 </span>
                 <span className="text-2xl font-bold text-slate-900">
@@ -73,7 +73,7 @@ export default function FAQSection() {
       <div className="mt-10 flex flex-wrap gap-4 justify-center">
                         <a
                             href="#"
-                            className="px-10 py-4 text-xl font-semibold text-white bg-green-600 rounded-full shadow-lg hover:bg-green-700 transition-transform duration-200 hover:scale-95"
+                            className="px-10 py-4 text-xl font-semibold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95"
                         >
                             Get the course
                         </a>

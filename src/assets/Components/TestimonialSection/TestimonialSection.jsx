@@ -19,7 +19,7 @@ export default function TestimonialSection() {
   const { avatarUrl, quote, text, name, role, companyLogoUrl } = testimonials[current];
 
   return (
-    <section className="bg-slate-900 py-20 relative overflow-hidden">
+    <section data-aos="fade-right" className="bg-slate-900 py-20 relative overflow-hidden">
       {/* Heading */}
       <div className="text-center px-6 mb-12 text-white">
         <h2 className="text-4xl font-bold mb-4">Hear what our amazing students say</h2>
@@ -50,7 +50,7 @@ export default function TestimonialSection() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div>
                 <p className="font-semibold text-slate-900">{name}</p>
-                <p className="text-green-600">{role}</p>
+                <p className="text-red-600">{role}</p>
               </div>
               <div className="opacity-60">
                 <img src={companyLogoUrl} alt="company logo" className="h-8 object-contain" />

@@ -20,7 +20,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
+import { Link } from 'react-router'
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -44,7 +44,7 @@ export default function Navbar() {
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src='src\assets\Images\comercify360Logocropped.png'
+              src='https://i.ibb.co/bgQdHcVb/comercify360-Logocropped.png'
               className="h-8 w-auto"
             />
           </a>
@@ -60,7 +60,7 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold text-gray-500">
               Product
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
@@ -102,22 +102,22 @@ export default function Navbar() {
                 ))}
               </div>
             </PopoverPanel>
-          </Popover>
+          </Popover> */}
 
           <a href="#" className="text-xl font-semibold text-gray-500">
-            Features
+            <Link to="/">Home</Link>
           </a>
           <a href="#" className="text-xl font-semibold text-gray-500">
-            Marketplace
+            <Link to="/course">Course</Link>
           </a>
           <a href="#" className="text-xl font-semibold text-gray-500">
-            Company
+            Instructor
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
   href="#"
-  className="px-5 py-4 text-base font-bold text-white bg-green-600 rounded-full shadow-lg hover:bg-green-700 transition-transform duration-200 hover:scale-95"
+  className="px-5 py-4 text-base font-bold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95"
 >
   Get the course
 </a>
@@ -187,7 +187,7 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                 href="#"
-                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
               >
                 Get the course
               </a>

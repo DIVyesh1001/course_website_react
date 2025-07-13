@@ -49,7 +49,7 @@ export default function LearnSection() {
             <img
               src="https://plus.unsplash.com/premium_photo-1661605241052-c7d9de64a556?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Course preview"
-              className="relative w-150 h-150 rounded-lg shadow-lg object-cover z-10"
+              className="relative w-full h-full rounded-lg shadow-lg object-cover z-10"
             />
           </div>
 

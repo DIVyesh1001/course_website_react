@@ -9,6 +9,7 @@ import FAQSection from './assets/Components/FAQSection/FAQSection'
 import FooterSection from './assets/Components/FooterSection/FooterSection'
 import Home from './assets/Pages/Home/Home'
 import Course from './assets/Pages/Course/Course'
+import Success from './assets/Components/Success/Success'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router';
@@ -31,6 +32,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       <FooterSection/>
     </div>

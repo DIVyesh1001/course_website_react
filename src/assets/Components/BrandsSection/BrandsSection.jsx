@@ -13,13 +13,7 @@ const brands = [
   { name: "Daybreak", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "Dr. Vaidya's", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "EMBARK", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "flo", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Godrej", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "kikibix", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Milton", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Nestroots", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Nykaa", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "New Balance", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" }
+  { name: "flo", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" }
 ];
 
 

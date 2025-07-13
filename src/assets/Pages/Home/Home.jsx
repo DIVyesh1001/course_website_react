@@ -6,10 +6,12 @@ import TestimonialSection from '../../Components/TestimonialSection/TestimonialS
 import FAQSection from '../../Components/FAQSection/FAQSection'
 import BrandsSection from '../../Components/BrandsSection/BrandsSection'
 import QASection from '../../Components/QASection/QASection'
+import FeaturedSection from '../../Components/FeaturedSection/FeaturedSection'
 export default function Home() {
     return (
         <div>
             <HeroSection />
+            <FeaturedSection/>
             <InstructorSection />
             <QASection/>
             <LearnSection />

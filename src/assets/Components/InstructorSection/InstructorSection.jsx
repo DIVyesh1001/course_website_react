@@ -56,12 +56,12 @@ export default function InstructorSection() {
                         <Link to="/course" className="px-10 py-4 text-xl font-semibold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95">
                                 Get Started
                         </Link>
-                        <Link to="/course" className="px-10 py-4 text-xl font-semibold text-slate-900 bg-white border border-slate-200 rounded-full shadow hover:bg-slate-100 transition-transform duration-200 hover:scale-95">
+                        <a href='https://commercify360.com/' className="px-10 py-4 text-xl font-semibold text-slate-900 bg-white border border-slate-200 rounded-full shadow hover:bg-slate-100 transition-transform duration-200 hover:scale-95">
                                 Learn More
-                        </Link>
-                        <Link to="/course" className="px-10 py-4 text-xl font-semibold text-slate-900 bg-white border border-slate-200 rounded-full shadow hover:bg-slate-100 transition-transform duration-200 hover:scale-95 ms:display:none;">
+                        </a>
+                        {/* <Link to="/course" className="px-10 py-4 text-xl font-semibold text-slate-900 bg-white border border-slate-200 rounded-full shadow hover:bg-slate-100 transition-transform duration-200 hover:scale-95 ms:display:none;">
                                 Learn More about Comemrcify360
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

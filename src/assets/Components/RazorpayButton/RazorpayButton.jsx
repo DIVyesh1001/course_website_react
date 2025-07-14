@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function RazorpayButton() {
+export default function RazorpayButton({ userData, disabled }) {
   const [showSuccess, setShowSuccess] = useState(false);
   const [paymentId, setPaymentId] = useState(null);
 
@@ -15,29 +15,30 @@ export default function RazorpayButton() {
   };
 
   const handlePayment = async () => {
+    if (disabled) return;
+
     const isLoaded = await loadRazorpayScript();
     if (!isLoaded) {
-      alert('Razorpay SDK failed to load. Check your internet.');
+      alert('Razorpay SDK failed to load.');
       return;
     }
 
     const orderRes = await fetch('http://localhost:4000/create-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ amount: 499 }), // ₹499 for example
+      body: JSON.stringify({ amount: 499 }),
     });
 
     const order = await orderRes.json();
 
     const options = {
-      key: 'rzp_test_t0YoXu5ipkbXAo', // 🔁 replace with your Razorpay key
+      key: 'rzp_test_t0YoXu5ipkbXAo',
       amount: order.amount,
       currency: order.currency,
       name: 'Your Brand Name',
       description: 'Payment for XYZ',
       order_id: order.id,
       handler: async function (response) {
-        // backend verification
         const verifyRes = await fetch('http://localhost:4000/verify-payment', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -45,8 +46,10 @@ export default function RazorpayButton() {
             razorpay_order_id: response.razorpay_order_id,
             razorpay_payment_id: response.razorpay_payment_id,
             razorpay_signature: response.razorpay_signature,
-            userEmail: 'divyesh.dishu@gmail.com',
-            userName: 'Divyesh Pandey',
+            userEmail: userData.email,
+            userPhone: userData.phone,
+            userLinkedIn: userData.linkedin,
+            userName: userData.name,
           }),
         });
 
@@ -63,12 +66,12 @@ export default function RazorpayButton() {
         }
       },
       prefill: {
-        name: 'Divyesh Pandey',
-        email: 'divyesh.dishu@gmail.com',
-        contact: '9876543210',
+        name: userData.name,
+        email: userData.email,
+        contact: userData.phone,
       },
       notes: {
-        product_id: 'xyz-123',
+        linkedin_profile: userData.linkedin,
       },
       theme: {
         color: '#6366f1',
@@ -83,20 +86,23 @@ export default function RazorpayButton() {
     <>
       <button
         onClick={handlePayment}
-        className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+        disabled={disabled}
+        className={`w-full px-6 py-3 rounded-4xl text-lg font-semibold transition ${
+          disabled
+            ? 'bg-gray-400 text-white cursor-not-allowed'
+            : 'bg-red-600 hover:bg-red-700 hover:scale-90 text-white cursor-pointer'
+        }`}
       >
         Pay ₹499
       </button>
 
       {showSuccess && (
-        <div className="fixed inset-0 z-50 h-50  bg-opacity-40 flex justify-center">
+        <div className="fixed inset-0 z-50 bg-opacity-40 flex justify-center items-center">
           <div className="bg-white px-8 py-6 rounded-xl shadow-lg text-center max-w-sm w-full animate-fade-in-up">
             <h2 className="text-2xl font-bold text-green-600">✅ Payment Successful</h2>
             <p className="mt-2 text-gray-700">Thank you for your payment.</p>
             <p className="text-sm text-gray-500 mt-2">Redirecting to confirmation page...</p>
-            <p className="mt-4 text-xs text-gray-400">
-              Payment ID: <span className="font-mono">{paymentId}</span>
-            </p>
+            <p className="mt-4 text-xs text-gray-400">Payment ID: <span className="font-mono">{paymentId}</span></p>
           </div>
         </div>
       )}

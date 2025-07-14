@@ -140,9 +140,9 @@ export default function AccordionComponent() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Frequently Asked Questions
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          {/* <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Get answers to all your questions about our comprehensive Amazon Ads course. Learn from industry expert Renu Bisht and master the art of scaling brands on Amazon.
-          </p>
+          </p> */}
         </div>
 
         {/* Accordion Section */}

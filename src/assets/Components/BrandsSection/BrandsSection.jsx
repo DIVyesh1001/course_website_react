@@ -2,11 +2,11 @@ import React from 'react'
 
 
 const brands = [
-  { name: "aastey", logo: "https://images.seeklogo.com/logo-png/35/1/nykaa-logo-png_seeklogo-358073.png" },
-  { name: "Alpino", logo: "https://images.seeklogo.com/logo-png/6/1/godrej-logo-png_seeklogo-61760.png" },
-  { name: "amanté", logo: "https://images.seeklogo.com/logo-png/9/1/new-balance-logo-png_seeklogo-98723.png" },
-  { name: "AZANI", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "The Whole Truth", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
+  { name: "nykaa", logo: "https://images.seeklogo.com/logo-png/35/1/nykaa-logo-png_seeklogo-358073.png" },
+  { name: "godrej", logo: "https://images.seeklogo.com/logo-png/6/1/godrej-logo-png_seeklogo-61760.png" },
+  { name: "new balance", logo: "https://images.seeklogo.com/logo-png/9/1/new-balance-logo-png_seeklogo-98723.png" },
+  { name: "cult.sport", logo: "https://images.seeklogo.com/logo-png/45/1/cult-fit-logo-png_seeklogo-454845.png" },
+  { name: "sennheiser", logo: "https://images.seeklogo.com/logo-png/37/1/sennheiser-logo-png_seeklogo-375193.png" },
   { name: "BRB", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "CAI", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "cult.sport", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },

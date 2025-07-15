@@ -31,10 +31,10 @@ export default function InstructorSection() {
                                 className="h-20"
                             /> */}
                             <div className="flex gap-3 text-slate-400">
-                                <img src="https://i.ibb.co/twz2Kxn7/facebook-brand-fb-logo-icon.png" className="h-5 w-5" />
-                                <img src="https://i.ibb.co/bpHVfyy/firefox-logo-logos-icon.png" className="h-5 w-5" />
-                                <img src="https://i.ibb.co/RpJjm7xc/instagram-brand-logo-icon.png" className="h-5 w-5" />
-                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" className="h-5 w-5" />
+                                {/* <img src="https://i.ibb.co/twz2Kxn7/facebook-brand-fb-logo-icon.png" className="h-5 w-5" />
+                                <img src="https://i.ibb.co/bpHVfyy/firefox-logo-logos-icon.png" className="h-5 w-5" /> */}
+                                <a href='https://www.instagram.com/rbisht5?igsh=ZnFvaTk0c2JrZXVo'><img src="https://i.ibb.co/RpJjm7xc/instagram-brand-logo-icon.png" className="h-5 w-5" /></a>
+                                <a href='https://www.linkedin.com/in/renubisht?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" className="h-5 w-5" /></a>
                             </div>
                         </div>
                     </div>

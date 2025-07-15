@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FeaturedSection() {
     return (
-        <div class=" w-full my-10 px-4 pt-16 pb-16 xl:grid grid-cols-[1fr_2fr] bg-gray-100" id="faq">
+        <div class=" w-full my-5 px-4 pt-16 pb-16 xl:grid grid-cols-[1fr_2fr] bg-gray-100" id="faq">
                 <h2 class=" text-4xl p-5 font-bold text-center">Featured in:</h2>
 
                 <div

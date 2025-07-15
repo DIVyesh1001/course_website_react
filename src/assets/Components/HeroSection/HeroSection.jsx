@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router'
 export default function HeroSection() {
     return (
-        <section data-aos="fade-up" className="bg-white py-20 mx-10">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-1 py-20">
+        
+        <section data-aos="fade-up"  className="bg-white py-5 mx-10">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-1 py-5">
                 {/* Left Side */}
                 <div>
                     <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
@@ -40,7 +41,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right Side */}
-                <div className="relative w-full h-full py-15">
+                <div className="relative w-full h-full py-10">
                     {/* Decorative Top Left red Half Circle */}
                     {/* <img
                         src="src\assets\Images\redring.svg"

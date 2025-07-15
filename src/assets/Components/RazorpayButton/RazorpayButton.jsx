@@ -97,7 +97,7 @@ export default function RazorpayButton({ userData, disabled }) {
       </button>
 
       {showSuccess && (
-        <div className="fixed inset-0 z-50 bg-opacity-40 flex justify-center items-center">
+        <div className="fixed color-stone-800 inset-0 z-50 bg-opacity-40 flex justify-center items-center">
           <div className="bg-white px-8 py-6 rounded-xl shadow-lg text-center max-w-sm w-full animate-fade-in-up">
             <h2 className="text-2xl font-bold text-green-600">✅ Payment Successful</h2>
             <p className="mt-2 text-gray-700">Thank you for your payment.</p>

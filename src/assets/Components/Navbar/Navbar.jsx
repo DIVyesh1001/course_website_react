@@ -66,7 +66,7 @@ export default function Navbar() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/course" className="px-5 py-4 text-base font-bold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95">
-  Get the course
+  Enroll Now
           </Link>
         </div>
       </nav>

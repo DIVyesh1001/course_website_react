@@ -2,9 +2,9 @@ import React from 'react'
 
 
 const brands = [
-  { name: "aastey", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Alpino", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "amanté", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
+  { name: "aastey", logo: "https://images.seeklogo.com/logo-png/35/1/nykaa-logo-png_seeklogo-358073.png" },
+  { name: "Alpino", logo: "https://images.seeklogo.com/logo-png/6/1/godrej-logo-png_seeklogo-61760.png" },
+  { name: "amanté", logo: "https://images.seeklogo.com/logo-png/9/1/new-balance-logo-png_seeklogo-98723.png" },
   { name: "AZANI", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "The Whole Truth", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
   { name: "BRB", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
@@ -22,7 +22,7 @@ export default function BrandsSection() {
     <div className="bg-emerald-400 py-16 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-xl font-medium text-black">
-          Trusted by nearly 200+ paying customers
+          Trusted by nearly 200+ brands
         </h2>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
@@ -34,7 +34,7 @@ export default function BrandsSection() {
             <img
               src={brand.logo}
               alt={brand.name}
-              className="max-h-12 max-w-[90%] object-contain"
+              className="max-h-30 max-w-[90%] object-contain"
               loading="lazy"
             />
           </div>

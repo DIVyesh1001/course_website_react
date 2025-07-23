@@ -2,25 +2,28 @@ import React, { useState, useEffect } from 'react';
 
 const testimonials = [
   {
-    avatarUrl: 'https://i.postimg.cc/3y6RY0JP/Arjun-Vaidya.jpg', // Replace with Dr. Vaidya logo or image
+    avatarUrl: 'https://i.postimg.cc/WpkGbSFJ/1671690333384.png', // Replace with Dr. Vaidya logo or image
     name: 'Arjun Vaidya',
     role: 'Founder',
     brand: 'Dr Vaidya',
     text: `In 2019, we connected with Renu and the Commercify360 Team and brought them on board to support our Amazon business. Working with them was a great experience. Our Dr. Vaidya business saw a 5X increase in revenue while collaborating with them. We appreciated how proactive and detail-oriented the team was, and they genuinely cared about our brand, which is not common among many agencies.`,
+    companyLogoUrl:'https://i.postimg.cc/0y2z74hH/vaidya-e1628684769180.png'
   },
   {
-    avatarUrl: 'https://i.postimg.cc/zL3BsF5C/Nishit-shah.png', // Replace with XP Pen logo or image
+    avatarUrl: 'https://i.postimg.cc/vBjt2N1G/NISHIT-720x.png', // Replace with XP Pen logo or image
     name: 'Nishit Shah',
     role: 'Country Manager',
     brand: 'XP Pen',
     text: `Renu and the Commercify360 team have done a fantastic job in driving and sustaining our growth on Amazon and Flipkart. Their dedication, deep knowledge of the platforms, and keen eye for detail have made a real difference to our business. We truly value their strategic support and hands-on approach.`,
+    companyLogoUrl:'https://i.postimg.cc/prfmBM23/xp-pen.png'
   },
   {
-    avatarUrl: 'https://i.postimg.cc/MMQGTZnX/Neeraj-Biyani.png', // Replace with Asaya logo or image
+    avatarUrl: 'https://i.postimg.cc/FzLzGd4P/Neeraj-Biyani1-1588435586237.png', // Replace with Asaya logo or image
     name: 'Neeraj Biyani',
     role: 'Founder',
     brand: 'Asaya',
     text: `We grew 16x on Amazon in just 12 months — with Renu and the Commercify360 team by our side. Their strategic AMS planning, creative innovations, and relentless optimisation truly stood out. From FBA enablement to A+ content, every lever was executed to perfection. Excited to continue this growth journey together!`,
+    companyLogoUrl:'https://i.postimg.cc/FHBH3Hy7/asaya.png'
   },
   {
     avatarUrl: 'https://i.postimg.cc/HsbXgWtm/gaurav-zatakia.jpg', // Replace with FLO logo or image
@@ -28,6 +31,7 @@ const testimonials = [
     role: 'Founder',
     brand: 'FLO Mattress',
     text: `Renu and the Commercify360 team have been managing our Amazon and Flipkart accounts for the past 4 years, and we’ve consistently grown with them. Their deep platform expertise, sharp eye for detail, and instant support have made them an invaluable partner in our journey. From driving sales growth to guiding us through strategic decisions — including FBA adoption, A+ content, and campaign optimisation — they’ve helped us scale efficiently.`,
+    companyLogoUrl:'https://i.postimg.cc/3JQp0nKP/Flo.webp'
   },
 ];
 
@@ -50,7 +54,7 @@ export default function TestimonialSection() {
     setCurrent((prev) => (prev + 1) % total);
   };
 
-  const { avatarUrl, name, role, brand, text } = testimonials[current];
+  const { avatarUrl, name, role, brand, text,companyLogoUrl } = testimonials[current];
 
   return (
     <section className="bg-slate-900 py-20 relative overflow-hidden">
@@ -64,12 +68,12 @@ export default function TestimonialSection() {
       <div className="max-w-5xl mx-auto relative px-6">
         <div className="bg-white rounded-lg sm:rounded-xl shadow-2xl flex flex-col lg:flex-row items-center sm:items-start p-6 sm:p-8 lg:p-12 min-h-[400px] sm:min-h-[350px] lg:min-h-[300px]">
           {/* Avatar */}
-          <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
+          <div className="flex-shrink-0 mb-0 md:mb-5 md:mr-10 sm:mb-6 place-self-center">
             <div className=" w-full h-90 items-center ">
               <img
                 src={avatarUrl}
                 alt={brand}
-                className="w-full sm:h-full h-80 rounded-4xl"
+                className="w-full sm:h-full h-70 rounded-4xl"
               />
             </div>
           </div>
@@ -83,9 +87,9 @@ export default function TestimonialSection() {
                 <p className="font-semibold text-slate-900">{name}</p>
                 <p className="text-red-600">{role}</p>
               </div>
-              {/* <div className="opacity-60">
-                <img src={companyLogoUrl} alt="company logo" className="h-8 object-contain" />
-              </div> */}
+              <div className="opacity-60">
+                <img src={companyLogoUrl} alt="company logo" className="h-20 object-contain place-self-center" />
+              </div>
             </div>
           </div>
         </div>

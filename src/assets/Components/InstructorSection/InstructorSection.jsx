@@ -7,23 +7,23 @@ export default function InstructorSection() {
                 {/* Left Side – Image with decorations */}
                 <div className="relative w-full h-full">
                     {/* Decorative Half Circle */}
-                    <img
+                    {/* <img
                         src="https://i.ibb.co/MJCk2ZR/red-circle.png"
                         alt="Man at laptop"
                         className="absolute -top-20 -left-20 w-64 h-64 z-0"
-                    />
+                    /> */}
 
                     {/* Image */}
                     <img
-                        src="https://plus.unsplash.com/premium_photo-1661508196384-333e4ebd90db?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Decorative"
+                        src="https://i.postimg.cc/QCSc70Yb/Renu-single.jpg"
+                        alt="Renu Bisht"
                         className="relative z-10 w-full h-full rounded-lg shadow-xl object-cover"
                     />
 
                     {/* Info Card - Hidden on small screens */}
                     <div className="absolute bottom-[-40px] right-[-40px] bg-white rounded-sm shadow-xl p-6 w-80 h-60 z-20 hidden md:block">
-                        <h3 className="text-lg font-bold text-slate-900">Renu Bisht</h3>
-                        <p className="text-red-600 text-sm font-medium mb-2">Founder, Commercify360, DTC & Marketplace Coach, and Amazon Ads expert</p>
+                        <h3 className="text-4xl font-bold text-slate-900 mb-5">Renu Bisht</h3>
+                        <p className="text-red-600 text-sm font-medium mb-5">Founder, Commercify360, DTC & Marketplace Coach, and Amazon Ads expert</p>
                         <div className="flex items-center justify-between ">
                             {/* <img
                                 src="https://i.ibb.co/s91YFxwj/signature-stock-image.jpg"
@@ -54,7 +54,7 @@ export default function InstructorSection() {
                     {/* Buttons */}
                     <div className="mt-10 flex flex-wrap gap-4">
                         <Link to="/course" className="px-10 py-4 text-xl font-semibold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95">
-                                Get Started
+                                Enroll now
                         </Link>
                         <a href='https://commercify360.com/' className="px-10 py-4 text-xl font-semibold text-slate-900 bg-white border border-slate-200 rounded-full shadow hover:bg-slate-100 transition-transform duration-200 hover:scale-95">
                                 Learn More

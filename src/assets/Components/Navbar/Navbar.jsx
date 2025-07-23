@@ -61,8 +61,11 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-            <Link to="/" className="text-xl font-semibold text-gray-500">Home</Link>
-            <Link to="/course" className="text-xl font-semibold text-gray-500">Course</Link>
+            <Link to="/" className="text-xl font-semibold text-gray-500 hover:text-red-600">Home</Link>
+            <Link to="/course" className="text-xl font-semibold text-gray-500 hover:text-red-600">Course</Link>
+            <a href="#faqs" className="text-xl font-semibold text-gray-500 hover:text-red-600">
+                  FAQs
+            </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/course" className="px-5 py-4 text-base font-bold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95">
@@ -118,6 +121,9 @@ export default function Navbar() {
                 <Link to="/course" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                   Course
                 </Link>
+                <a href="#faq" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  FAQs
+                </a>
               </div>
               <div className="py-6">
                 <Link to="/course" className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">

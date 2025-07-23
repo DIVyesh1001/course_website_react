@@ -10,6 +10,8 @@ import {
   FaTelegramPlane,
 } from 'react-icons/fa';
 
+import { Link } from 'react-router';
+
 export default function FooterSection() {
   return (
     <footer className=" bg-white text-slate-700" data-aos="fade-in">
@@ -28,7 +30,7 @@ export default function FooterSection() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex space-x-4 text-slate-400 hover:text-slate-600">
+        {/* <div className="flex space-x-4 text-slate-400 hover:text-slate-600">
           <a href="#" aria-label="Facebook"><FaFacebookF /></a>
           <a href="#" aria-label="Twitter"><FaTwitter /></a>
           <a href="#" aria-label="Instagram"><FaInstagram /></a>
@@ -37,7 +39,7 @@ export default function FooterSection() {
           <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
           <a href="#" aria-label="Slack"><FaSlack /></a>
           <a href="#" aria-label="Telegram"><FaTelegramPlane /></a>
-        </div>
+        </div> */}
       </div>
 
       {/* Main columns */}
@@ -46,14 +48,30 @@ export default function FooterSection() {
         <div>
           <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Pages</h4>
           <ul className="space-y-2 text-base">
-            {['Home', 'About the Teacher', 'Course', 'FAQs', 'Footer'].map((label) => (
+            {/* {['Home', 'Course', 'FAQs'].map((label) => (
               <li key={label} className="flex items-center">
                 <a href="#" className="hover:underline">{label}</a>
                 {['Courses', 'Course'].includes(label) && (
                   <span className="ml-2 bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded">New</span>
                 )}
               </li>
-            ))}
+            ))} */}
+            <li className="flex items-center">
+              <Link to='/' className="hover:underline">
+                Home
+              </Link>
+            </li>
+            <li className="flex items-center">
+              <Link to="/course" className="hover:underline">
+                Courses
+              </Link>
+              <span className="ml-2 bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded">New</span>
+            </li>
+            <li className="flex items-center">
+              <a href="#faqs" className="hover:underline">
+                FAQs
+              </a>
+            </li>
           </ul>
         </div>
 

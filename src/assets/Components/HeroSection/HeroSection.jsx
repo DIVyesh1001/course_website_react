@@ -3,25 +3,27 @@ import { Link } from 'react-router'
 export default function HeroSection() {
     return (
         
-        <section data-aos="fade-up"  className="bg-white py-5 mx-10">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-1 py-5">
+        <section id='Home' data-aos="fade-up"  className="bg-white py-5 mx-10">
+            <div className=" max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-1 py-5">
                 {/* Left Side */}
                 <div>
-                    <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                    <h1 className="font-regular text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
                         Master Amazon Ads: <br /> From Zero to Pro
                     </h1>
                     <p className="mt-6 text-xl text-slate-600 leading-relaxed">
                         Learn how to drive traffic, boost conversions, and scale your brand using Amazon’s powerful ad ecosystem.
-                        🛒 Perfect for sellers, marketers, and agencies. No prior experience required.
+                        
+                    <p>🛒 Perfect for sellers, marketers, and agencies.</p>
+                        <p> No prior experience required.</p>
 
                     </p>
 
                     {/* Author */}
                     <div className="mt-8 flex items-center gap-4">
                         <img
-                            src="https://i.ibb.co/RXr14wd/businesswoman.png"
+                            src="https://i.postimg.cc/sDNhRBkv/Renu-single-pic-07.jpg"
                             alt="Renu Bisht"
-                            className="w-12 h-12 rounded-full object-cover"
+                            className="w-15 h-15 rounded-full object-cover"
                         />
                         <div>
                             <p className="text-xl font-bold text-slate-900">Renu Bisht</p>

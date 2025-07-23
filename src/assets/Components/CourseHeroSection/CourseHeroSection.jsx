@@ -22,7 +22,7 @@ export default function CourseHeroSection() {
                             href="#course"
                             className="px-10 py-4 text-xl font-bold text-white bg-red-600 rounded-full shadow-lg hover:bg-red-700 transition-transform duration-200 hover:scale-95"
                         >
-                            Get the course
+                            Enroll now
                         </a>
                     </div>
 

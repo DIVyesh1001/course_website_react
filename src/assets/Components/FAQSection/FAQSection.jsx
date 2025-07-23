@@ -133,7 +133,7 @@ export default function AccordionComponent() {
   );
 
   return (
-    <div className="min-h-screen bg-[#fbfbfb] py-12 px-4">
+    <div className="min-h-screen bg-[#fbfbfb] py-12 px-4" id='faqs'>
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

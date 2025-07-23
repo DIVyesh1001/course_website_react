@@ -1,75 +1,123 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const testimonials = [
   {
-    avatarUrl: 'https://cdn.prod.website-files.com/60d9feb9c76d589e5bee9402/60da4e8c0a1f6ecff5b19314_image-1-testimonials-slider-course-x-template.png',
-    quote:
-      '“The best course available to power up your marketing team.”',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, aliquet duis pellentesque pretium mattis orci. Vestibulum nunc diam tellus ac tempor. Nulla a commodo.',
-    name: 'Will Woodward',
-    role: 'Head of Growth Marketing',
-    companyLogoUrl: 'https://via.placeholder.com/100x40?text=Startup',
+    avatarUrl: 'https://i.postimg.cc/3y6RY0JP/Arjun-Vaidya.jpg', // Replace with Dr. Vaidya logo or image
+    name: 'Arjun Vaidya',
+    role: 'Founder',
+    brand: 'Dr Vaidya',
+    text: `In 2019, we connected with Renu and the Commercify360 Team and brought them on board to support our Amazon business. Working with them was a great experience. Our Dr. Vaidya business saw a 5X increase in revenue while collaborating with them. We appreciated how proactive and detail-oriented the team was, and they genuinely cared about our brand, which is not common among many agencies.`,
   },
-  // you can add more testimonial objects here
+  {
+    avatarUrl: 'https://i.postimg.cc/zL3BsF5C/Nishit-shah.png', // Replace with XP Pen logo or image
+    name: 'Nishit Shah',
+    role: 'Country Manager',
+    brand: 'XP Pen',
+    text: `Renu and the Commercify360 team have done a fantastic job in driving and sustaining our growth on Amazon and Flipkart. Their dedication, deep knowledge of the platforms, and keen eye for detail have made a real difference to our business. We truly value their strategic support and hands-on approach.`,
+  },
+  {
+    avatarUrl: 'https://i.postimg.cc/MMQGTZnX/Neeraj-Biyani.png', // Replace with Asaya logo or image
+    name: 'Neeraj Biyani',
+    role: 'Founder',
+    brand: 'Asaya',
+    text: `We grew 16x on Amazon in just 12 months — with Renu and the Commercify360 team by our side. Their strategic AMS planning, creative innovations, and relentless optimisation truly stood out. From FBA enablement to A+ content, every lever was executed to perfection. Excited to continue this growth journey together!`,
+  },
+  {
+    avatarUrl: 'https://i.postimg.cc/HsbXgWtm/gaurav-zatakia.jpg', // Replace with FLO logo or image
+    name: 'Gaurav Zatakia',
+    role: 'Founder',
+    brand: 'FLO Mattress',
+    text: `Renu and the Commercify360 team have been managing our Amazon and Flipkart accounts for the past 4 years, and we’ve consistently grown with them. Their deep platform expertise, sharp eye for detail, and instant support have made them an invaluable partner in our journey. From driving sales growth to guiding us through strategic decisions — including FBA adoption, A+ content, and campaign optimisation — they’ve helped us scale efficiently.`,
+  },
 ];
 
 export default function TestimonialSection() {
   const [current, setCurrent] = useState(0);
-  const { avatarUrl, quote, text, name, role, companyLogoUrl } = testimonials[current];
+  const total = testimonials.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % total);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, [total]);
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev - 1 + total) % total);
+  };
+
+  const handleNext = () => {
+    setCurrent((prev) => (prev + 1) % total);
+  };
+
+  const { avatarUrl, name, role, brand, text } = testimonials[current];
 
   return (
-    <section data-aos="fade-right" className="bg-slate-900 py-20 relative overflow-hidden">
-      {/* Heading */}
+    <section className="bg-slate-900 py-20 relative overflow-hidden">
       <div className="text-center px-6 mb-12 text-white">
-        <h2 className="text-4xl font-bold mb-4">Hear what our amazing students say</h2>
+        <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
         <p className="max-w-2xl mx-auto text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac eu et ac elit senectus mauris
-          blandit tempore gestas.
+          What our brand partners say about working with Commercify360
         </p>
       </div>
-
-      {/* Testimonial Card */}
-      <div className="max-w-5xl  mx-auto relative">
-        <div className="bg-white  h-120 rounded-sm shadow-2xl flex flex-col md:flex-row items-center p-8 md:p-12">
+      {/* testimonial card */}
+      <div className="max-w-5xl mx-auto relative px-6">
+        <div className="bg-white rounded-lg sm:rounded-xl shadow-2xl flex flex-col lg:flex-row items-center sm:items-start p-6 sm:p-8 lg:p-12 min-h-[400px] sm:min-h-[350px] lg:min-h-[300px]">
           {/* Avatar */}
           <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
-            <div className="w-full h-90  ">
+            <div className=" w-full h-90 items-center ">
               <img
                 src={avatarUrl}
-                alt={name}
-                className="w-full h-full  "
+                alt={brand}
+                className="w-full sm:h-full h-80 rounded-4xl"
               />
             </div>
           </div>
           {/* Content */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">{quote}</h3>
-            <p className="text-slate-600 mb-6">{text}</p>
+            {/* <h3 className="text-2xl font-bold text-slate-900 mb-4">{text}</h3> */}
+            <p className="text-slate-600 mb-4 sm:mb-6">{text}</p>
             <hr className="border-slate-200 mb-6" />
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div>
                 <p className="font-semibold text-slate-900">{name}</p>
                 <p className="text-red-600">{role}</p>
               </div>
-              <div className="opacity-60">
+              {/* <div className="opacity-60">
                 <img src={companyLogoUrl} alt="company logo" className="h-8 object-contain" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center mt-8 space-x-3">
-          {testimonials.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrent(idx)}
-              className={`w-3 h-3 rounded-full transition-opacity ${
-                idx === current ? 'bg-white opacity-100' : 'bg-white opacity-50'
-              }`}
-            />
-          ))}
+        {/* Navigation + Dots */}
+        <div className="flex items-center justify-center gap-8 mt-10">
+          {/* <button
+            onClick={handlePrev}
+            className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white text-xl flex items-center justify-center"
+            aria-label="Previous"
+          >
+            ‹
+          </button> */}
+
+          <div className="flex gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`w-3 h-3 rounded-full ${i === current ? 'bg-white' : 'bg-white/50'
+                  }`}
+              />
+            ))}
+          </div>
+
+          {/* <button
+            onClick={handleNext}
+            className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white text-xl flex items-center justify-center"
+            aria-label="Next"
+          >
+            ›
+          </button> */}
         </div>
       </div>
     </section>

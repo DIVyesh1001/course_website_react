@@ -7,13 +7,13 @@ const brands = [
   { name: "new balance", logo: "https://images.seeklogo.com/logo-png/9/1/new-balance-logo-png_seeklogo-98723.png" },
   { name: "cult.sport", logo: "https://images.seeklogo.com/logo-png/45/1/cult-fit-logo-png_seeklogo-454845.png" },
   { name: "sennheiser", logo: "https://images.seeklogo.com/logo-png/37/1/sennheiser-logo-png_seeklogo-375193.png" },
-  { name: "BRB", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "CAI", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "cult.sport", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Daybreak", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "Dr. Vaidya's", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "EMBARK", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" },
-  { name: "flo", logo: "https://cdn-icons-png.flaticon.com/512/281/281764.png" }
+  { name: "serona", logo: "https://i.postimg.cc/SNwpjcBw/images.png" },
+  { name: "CAI", logo: "https://i.postimg.cc/h4HDhR8p/images-2.png" },
+  { name: "cult.sport", logo: "https://i.postimg.cc/kGYGjTBw/images-1.png" },
+  { name: "Daybreak", logo: "https://i.postimg.cc/QC7y8kzm/images-3.png" },
+  { name: "Dr. Vaidya's", logo: "https://i.postimg.cc/JzwCwtsM/Flo.webp" },
+  { name: "EMBARK", logo: "https://i.postimg.cc/8cSXkGk7/images-4.png" },
+  { name: "flo", logo: "https://i.postimg.cc/vTybVDtM/Timberland-logo.png" }
 ];
 
 

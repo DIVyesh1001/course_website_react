@@ -137,7 +137,7 @@ export default function AccordionComponent() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl font-semibold  sm:text-5xl text-gray-900 mb-6">
             Frequently Asked Questions
           </h1>
           {/* <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

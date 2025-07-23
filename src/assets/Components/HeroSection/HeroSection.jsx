@@ -13,8 +13,8 @@ export default function HeroSection() {
                     <p className="mt-6 text-xl text-slate-600 leading-relaxed">
                         Learn how to drive traffic, boost conversions, and scale your brand using Amazon’s powerful ad ecosystem.
                         
-                    <p>🛒 Perfect for sellers, marketers, and agencies.</p>
-                        <p> No prior experience required.</p>
+                    <p className='font-bold'>🛍️ Perfect for sellers, marketers, and agencies.</p>
+                        <p className='font-bold'>🚀 No prior experience required.</p>
 
                     </p>
 

@@ -13,7 +13,7 @@ const InfoCard = ({ icon: Icon, title, description }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4 }}
     viewport={{ once: true }}
-    className="border border-gray-200 rounded-xl p-6 bg-white shadow-md hover:shadow-xl transition-all"
+    className="border border-gray-200 rounded-xl p-6 bg-slate-50 shadow-md hover:shadow-xl transition-all"
   >
     <div className="mb-4 flex items-center justify-center bg-blue-100 w-12 h-12 rounded-full">
       <Icon className="text-red-600 w-6 h-6" />
@@ -25,7 +25,7 @@ const InfoCard = ({ icon: Icon, title, description }) => (
 
 export default function GetMoreSection() {
   return (
-    <section className="relative px-6 py-20 bg-gradient-to-br from-white to-blue-50">
+    <section className="relative px-6 py-5 from-white to-blue-50">
       {/* <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function GetMoreSection() {
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center mb-14"
       > */}
-        <h2 className="text-4xl text-center font-bold text-gray-900 relative ">
+        <h2 className="text-4xl font-semibold  sm:text-5xl text-center text-gray-900 relative ">
           Get More Than Just Learning
         </h2>
         <p className="mt-4 text-lg text-gray-700 text-center mb-10">

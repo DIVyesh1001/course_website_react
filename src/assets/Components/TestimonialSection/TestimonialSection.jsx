@@ -59,7 +59,7 @@ export default function TestimonialSection() {
   return (
     <section className="bg-slate-900 py-20 relative overflow-hidden">
       <div className="text-center px-6 mb-12 text-white">
-        <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
+        <h2 className="text-4xl font-semibold  sm:text-5xl mb-4">Client Testimonials</h2>
         <p className="max-w-2xl mx-auto text-lg">
           What our brand partners say about working with Commercify360
         </p>

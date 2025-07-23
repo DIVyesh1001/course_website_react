@@ -30,9 +30,11 @@ const topics = [
 
 export default function LearnSection() {
   return (
-    <section data-aos="fade-right" className="bg-white py-15 my-5">
+    <section 
+    // data-aos="fade-right" 
+    className="bg-white py-5">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-slate-900 mb-4">What will I learn?</h2>
+        <h1 className="text-4xl font-semibold  sm:text-5xl text-slate-900 mb-4">What will I learn?</h1>
         <p className="relative mx-auto max-w-2xl text-lg text-slate-600 mb-12 z-10">
           Gain practical, hands-on skills to launch, optimize, and scale high-performing Amazon ad campaigns across Sponsored Ads, DSP, and Sponsored TV.
         </p>

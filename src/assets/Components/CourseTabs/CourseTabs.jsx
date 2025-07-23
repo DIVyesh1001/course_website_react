@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const tabs = [
   { id: 'about', label: 'About the course' },
   { id: 'content', label: 'Course content' },
-  { id: 'PDF', label: 'Course PDF' },
+  // { id: 'PDF', label: 'Course PDF' },
 ];
 
 export default function CourseTabs() {
@@ -47,60 +47,131 @@ export default function CourseTabs() {
         );
       case 'content':
         return (
-          <div className="text-xl text-stone-700 space-y-3 leading-relaxed">
+          <div className="text-xl text-stone-700 space-y-4 leading-relaxed">
             <p>
-              Each session is designed to combine concept clarity, real-world application, and hands-on execution using the latest Amazon Ads interface (2025).
+              This comprehensive course is designed for D2C brand owners, retail founders, and marketers looking to unlock growth on Amazon India. Over two core sessions and one Q&A session, the program covers everything from foundational setup to advertising, conversion optimization, and scaling strategies.
             </p>
-            <p><strong>Module 1: Introduction to Amazon Advertising</strong></p>
+            
+            <div className="bg-stone-50 p-4 rounded-lg">
+              <p><strong>Session 1 – Day 1 (4 Hours)</strong></p>
+              <p className="text-lg text-stone-600 italic">Objective: Lay a strong foundation for succeeding on Amazon by understanding the ecosystem, setting up correctly, and launching effective advertising.</p>
+            </div>
+
+            <p><strong>1. Introduction to Amazon Ecosystem (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Understand the Amazon Ads ecosystem: Sponsored Products, Brands, Display, DSP, and Sponsored TV</li>
-              <li>How ads fit into the Amazon search and shopping experience</li>
-              <li>Navigating the new 2025 Amazon Ads Console</li>
-              <li>Setting up your account for success (Brand Registry, billing, access)</li>
+              <li>The role of Amazon in the D2C ecosystem: How Amazon complements D2C, omnichannel, and offline strategies</li>
+              <li>How Amazon differs from Shopify & Offline Retail (Traffic ownership, CAC, Ecosystem Control)</li>
+              <li>Marketplace vs 1P vs 3P vs Launchpad: Key differences, pros & cons for brands</li>
+              <li>Amazon's category structures and compliance basics (approval categories, documentation, restrictions)</li>
+              <li>Key Amazon Success Metrics:
+                <ul className="list-disc list-inside ml-6 mt-1">
+                  <li>TACOS (Total Advertising Cost of Sale)</li>
+                  <li>RoAS (Return on Ad Spend)</li>
+                  <li>Buy Box mechanics</li>
+                  <li>BSR (Best Seller Rank)</li>
+                  <li>Organic Ranking</li>
+                </ul>
+              </li>
+              <li>Case Study: A D2C brand that scaled to ₹1Cr+/month using Amazon effectively</li>
             </ul>
-            <p><strong>Module 2: Sponsored Products & Sponsored Brands</strong></p>
+
+            <p><strong>2. Setting Up for Success (1 Hour)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Building your first Sponsored Product campaign</li>
-              <li>Keyword targeting: Automatic vs Manual</li>
-              <li>Match types explained (broad, phrase, exact, negative)</li>
-              <li>Sponsored Brands: headline creatives, custom store pages, and product collections</li>
-              <li>Bidding strategies & budget setting for different ad types</li>
+              <li>Seller Central vs Vendor Central: Which suits your business model</li>
+              <li>Seller account setup checklist (GST, banking, trademarks, brand registry, barcodes)</li>
+              <li>Product Listing Fundamentals:
+                <ul className="list-disc list-inside ml-6 mt-1">
+                  <li>Titles, Bullets, Images, Keywords (SEO best practices)</li>
+                  <li>A+ Content / Enhanced Brand Content</li>
+                  <li>Catalog structuring for easy management</li>
+                </ul>
+              </li>
+              <li>Live Exercise: Create a dummy product listing and explore Amazon backend</li>
+              <li>Listing Hygiene SOP: Avoid common pitfalls that impact discoverability</li>
             </ul>
-            <p><strong>Module 3: Advanced Targeting & Campaign Structuring</strong></p>
+
+            <p><strong>3. Amazon Advertising Essentials (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Product targeting vs category targeting</li>
-              <li>Audience targeting with Sponsored Display</li>
-              <li>Structuring campaigns by ASINs, categories, and objectives</li>
-              <li>Using portfolios and naming conventions for scalable management</li>
-              <li>Geo-targeting, placements, and dayparting explained</li>
+              <li>Ad Types Explained: Sponsored Products (SP), Sponsored Brands (SB), Sponsored Display (SD)</li>
+              <li>Auto vs Manual Campaign Structures</li>
+              <li>Funnel Strategy: TOFU (Top), MOFU (Middle), BOFU (Bottom) for Amazon Ads</li>
+              <li>Budgeting and Bidding Tactics for different goals</li>
+              <li>Optimizing for RoAS vs TACOS: Finding balance</li>
+              <li>Analyzing Ad Performance Metrics (ACOS, CTR, CVR)</li>
+              <li>Practical Exercise: Review and optimize a sample campaign</li>
             </ul>
-            <p><strong>Module 4: Performance Metrics & Optimization</strong></p>
+
+            <p className="bg-red-50 p-3 rounded-lg"><strong>📝 Assignment #1:</strong> Setup Amazon Seller Central + Draft Ads Strategy Playbook</p>
+
+            <div className="bg-stone-50 p-4 rounded-lg">
+              <p><strong>Session 2 – Day 2 (4 Hours)</strong></p>
+              <p className="text-lg text-stone-600 italic">Objective: Learn how to drive conversions, scale systematically, and leverage growth levers.</p>
+            </div>
+
+            <p><strong>1. Conversion Optimization & Reviews (1 Hour)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Deep dive into ACOS, ROAS, CTR, CVR, TACoS, and New-to-Brand metrics</li>
-              <li>Analyzing Campaign Manager reports</li>
-              <li>Bid optimization tactics and budget reallocation</li>
-              <li>Using placement reports and performance dashboards for decision-making</li>
+              <li>Anatomy of High-Converting Listings:
+                <ul className="list-disc list-inside ml-6 mt-1">
+                  <li>Visual Strategy: Images, Infographics, A+ Content</li>
+                  <li>Pricing Optimization: Deals, Discounts, Anchoring</li>
+                </ul>
+              </li>
+              <li>Getting First 20 Reviews (ethical and compliant strategies)</li>
+              <li>Managing Negative Reviews & Feedback Loops</li>
+              <li>Live Analysis: Real listing teardown (before & after optimization)</li>
             </ul>
-            <p><strong>Module 5: Scaling Strategies & Sponsored TV / DSP</strong></p>
+
+            <p><strong>2. Scaling & Growth Hacks (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>When and how to scale: thresholds, testing, and profit zones</li>
-              <li>Introduction to Amazon DSP – use cases, targeting, and creative formats</li>
-              <li>Leveraging Sponsored TV for brand awareness campaigns</li>
-              <li>Retargeting strategies and cross-ASIN promotion</li>
+              <li>Winning the Amazon Choice Badge & BSR Game</li>
+              <li>Promotional Strategies: Lightning Deals, Coupons, Prime Day Playbook</li>
+              <li>Operational Levers: Subscribe & Save, FBA vs FBM, Multi-Channel Fulfillment (MCF)</li>
+              <li>Return Management & Operational Hygiene</li>
+              <li>New SKU Launch Playbook: Using Amazon Data for innovation</li>
+              <li>Tool Demos:
+                <ul className="list-disc list-inside ml-6 mt-1">
+                  <li>Helium 10</li>
+                  <li>Jungle Scout</li>
+                  <li>Amazon Brand Analytics</li>
+                </ul>
+              </li>
             </ul>
-            <p><strong>Module 6: Full-Funnel Strategy & Launch Plan</strong></p>
+
+            <p><strong>3. Bonus Tips, Live Audit, and Q&A (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Mapping campaigns to the customer journey: awareness → consideration → conversion → loyalty</li>
-              <li>Building a full-funnel campaign architecture using Sponsored and Display ads</li>
-              <li>Launching your first complete campaign set</li>
-              <li>Final review, Q&A, and personal feedback on your ad strategy</li>
+              <li>Tools every Amazon founder must use</li>
+              <li>7 Common Mistakes in Amazon Growth Journey</li>
+              <li>How to Scale from ₹1 Lakh to ₹1 Crore per Month</li>
+              <li>Live Audit of One Attendee's Amazon Store</li>
             </ul>
-            <p><strong>Bonus Content</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>📄 Downloadable templates (Campaign Planner, ROAS Tracker, Optimization Checklist)</li>
-              <li>🎥 Access to future bonus webinars and case studies</li>
-              <li>💬 Post-course support in exclusive WhatsApp community</li>
-            </ul>
+
+            <div className="bg-blue-50 p-4 rounded-lg">
+              <p><strong>Templates Provided:</strong></p>
+              <ul className="list-disc list-inside space-y-1 mt-2">
+                <li>Ad Management SOP</li>
+                <li>Listing Hygiene Checklist</li>
+                <li>Review Monitoring & Reporting SOP</li>
+              </ul>
+            </div>
+
+            <div className="bg-stone-50 p-4 rounded-lg">
+              <p><strong>Session 3 – Open Q&A (Flexible Duration)</strong></p>
+              <ul className="list-disc list-inside space-y-1 mt-2">
+                <li>Open-ended session for clarifying doubts</li>
+                <li>Personalized feedback on strategies and listings</li>
+                <li>Live problem-solving for attendees</li>
+              </ul>
+            </div>
+
+            <div className="bg-green-50 p-4 rounded-lg">
+              <p><strong>Inclusions for Participants:</strong></p>
+              <ul className="list-disc list-inside space-y-1 mt-2">
+                <li>Amazon Course Workbook</li>
+                <li>SOP Templates for Account Management, Advertising, and Reviews</li>
+                <li>Cheat Sheet: "Amazon Playbook for D2C Brands" (Growth Checklist + Tools + Frameworks)</li>
+                <li>Practical Assignments with Feedback</li>
+              </ul>
+            </div>
           </div>
         );
       case 'tbd':

@@ -24,7 +24,7 @@ export default function WhoIsThisCourseFor() {
         <div className="bg-white py-20 px-4 lg:px-8">
             {/* Centered Heading */}
             <div className="max-w-3xl mx-auto text-center mb-16">
-                <h1 className="text-4xl font-semibold text-gray-900 sm:text-5xl mb-6">
+                <h1 className="text-4xl font-semibold  sm:text-5xl text-gray-900 mb-6">
                     Who This Course is For?
                 </h1>
                 <p className="text-xl text-gray-700">
@@ -35,7 +35,7 @@ export default function WhoIsThisCourseFor() {
             {/* Cards */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {cardData.map((card, index) => (
-                    <div key={index} className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 border border-gray-200">
+                    <div key={index} className="bg-slate-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 border border-gray-200">
                         <h5 className="text-xl font-semibold text-gray-900 mb-3">{card.title}</h5>
                         <p className="text-gray-600 text-base">{card.desc}</p>
                     </div>

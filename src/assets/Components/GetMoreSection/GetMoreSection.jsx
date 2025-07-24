@@ -25,7 +25,7 @@ const InfoCard = ({ icon: Icon, title, description }) => (
 
 export default function GetMoreSection() {
   return (
-    <section className="relative px-6 py-5 from-white to-blue-50">
+    <section className="relative px-6 py-6 mb-5 mt-5 sm:mb-15 sm:mt-15 from-white to-blue-50 ">
       {/* <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}

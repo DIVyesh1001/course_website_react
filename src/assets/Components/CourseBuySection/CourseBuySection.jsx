@@ -77,11 +77,11 @@ export default function CourseBuySection() {
         <hr />
         <ul className="space-y-4 text-slate-700 text-sm">
           <li className="flex items-center gap-3"><FaChartBar className="text-red-600" /><span>Level: <strong>Intermediate</strong></span></li>
-          <li className="flex items-center gap-3"><FaClock className="text-red-600" /><span>Duration: <strong>5hr 32min</strong></span></li>
-          <li className="flex items-center gap-3"><FaPlay className="text-red-600" /><span>Videos: <strong>23</strong></span></li>
+          <li className="flex items-center gap-3"><FaClock className="text-red-600" /><span>Duration: <strong>10hr </strong></span></li>
+          {/* <li className="flex items-center gap-3"><FaPlay className="text-red-600" /><span>Videos: <strong>23</strong></span></li>
           <li className="flex items-center gap-3"><FaDownload className="text-red-600" /><span>Downloadable Files: <strong>9</strong></span></li>
           <li className="flex items-center gap-3"><FaInfinity className="text-red-600" /><span>Lifetime Access</span></li>
-          <li className="flex items-center gap-3"><FaTabletAlt className="text-red-600" /><span>Access from any device</span></li>
+          <li className="flex items-center gap-3"><FaTabletAlt className="text-red-600" /><span>Access from any device</span></li> */}
         </ul>
       </div>
     </div>

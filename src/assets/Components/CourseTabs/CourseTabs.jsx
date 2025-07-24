@@ -58,13 +58,13 @@ export default function CourseTabs() {
             </div>
 
             <p><strong>1. Introduction to Amazon Ecosystem (1.5 Hours)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>The role of Amazon in the D2C ecosystem: How Amazon complements D2C, omnichannel, and offline strategies</li>
               <li>How Amazon differs from Shopify & Offline Retail (Traffic ownership, CAC, Ecosystem Control)</li>
               <li>Marketplace vs 1P vs 3P vs Launchpad: Key differences, pros & cons for brands</li>
               <li>Amazon's category structures and compliance basics (approval categories, documentation, restrictions)</li>
               <li>Key Amazon Success Metrics:
-                <ul className="list-disc list-inside ml-6 mt-1">
+                <ul className="list-disc list-inside ml-6 mt-1 list-outside ml-5">
                   <li>TACOS (Total Advertising Cost of Sale)</li>
                   <li>RoAS (Return on Ad Spend)</li>
                   <li>Buy Box mechanics</li>
@@ -76,11 +76,11 @@ export default function CourseTabs() {
             </ul>
 
             <p><strong>2. Setting Up for Success (1 Hour)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Seller Central vs Vendor Central: Which suits your business model</li>
               <li>Seller account setup checklist (GST, banking, trademarks, brand registry, barcodes)</li>
               <li>Product Listing Fundamentals:
-                <ul className="list-disc list-inside ml-6 mt-1">
+                <ul className="list-disc list-inside ml-6 mt-1 list-outside ml-5">
                   <li>Titles, Bullets, Images, Keywords (SEO best practices)</li>
                   <li>A+ Content / Enhanced Brand Content</li>
                   <li>Catalog structuring for easy management</li>
@@ -91,7 +91,7 @@ export default function CourseTabs() {
             </ul>
 
             <p><strong>3. Amazon Advertising Essentials (1.5 Hours)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Ad Types Explained: Sponsored Products (SP), Sponsored Brands (SB), Sponsored Display (SD)</li>
               <li>Auto vs Manual Campaign Structures</li>
               <li>Funnel Strategy: TOFU (Top), MOFU (Middle), BOFU (Bottom) for Amazon Ads</li>
@@ -109,9 +109,9 @@ export default function CourseTabs() {
             </div>
 
             <p><strong>1. Conversion Optimization & Reviews (1 Hour)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Anatomy of High-Converting Listings:
-                <ul className="list-disc list-inside ml-6 mt-1">
+                <ul className="list-disc list-inside ml-6 mt-1 list-outside ml-5">
                   <li>Visual Strategy: Images, Infographics, A+ Content</li>
                   <li>Pricing Optimization: Deals, Discounts, Anchoring</li>
                 </ul>
@@ -122,14 +122,14 @@ export default function CourseTabs() {
             </ul>
 
             <p><strong>2. Scaling & Growth Hacks (1.5 Hours)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Winning the Amazon Choice Badge & BSR Game</li>
               <li>Promotional Strategies: Lightning Deals, Coupons, Prime Day Playbook</li>
               <li>Operational Levers: Subscribe & Save, FBA vs FBM, Multi-Channel Fulfillment (MCF)</li>
               <li>Return Management & Operational Hygiene</li>
               <li>New SKU Launch Playbook: Using Amazon Data for innovation</li>
               <li>Tool Demos:
-                <ul className="list-disc list-inside ml-6 mt-1">
+                <ul className="list-disc list-inside ml-6 mt-1 list-outside ml-5">
                   <li>Helium 10</li>
                   <li>Jungle Scout</li>
                   <li>Amazon Brand Analytics</li>
@@ -138,7 +138,7 @@ export default function CourseTabs() {
             </ul>
 
             <p><strong>3. Bonus Tips, Live Audit, and Q&A (1.5 Hours)</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Tools every Amazon founder must use</li>
               <li>7 Common Mistakes in Amazon Growth Journey</li>
               <li>How to Scale from ₹1 Lakh to ₹1 Crore per Month</li>
@@ -147,7 +147,7 @@ export default function CourseTabs() {
 
             <div className="bg-blue-50 p-4 rounded-lg">
               <p><strong>Templates Provided:</strong></p>
-              <ul className="list-disc list-inside space-y-1 mt-2">
+              <ul className="list-disc list-inside space-y-1 mt-2 list-outside ml-5">
                 <li>Ad Management SOP</li>
                 <li>Listing Hygiene Checklist</li>
                 <li>Review Monitoring & Reporting SOP</li>
@@ -156,7 +156,7 @@ export default function CourseTabs() {
 
             <div className="bg-stone-50 p-4 rounded-lg">
               <p><strong>Session 3 – Open Q&A (Flexible Duration)</strong></p>
-              <ul className="list-disc list-inside space-y-1 mt-2">
+              <ul className="list-disc list-inside space-y-1 mt-2 list-outside ml-5">
                 <li>Open-ended session for clarifying doubts</li>
                 <li>Personalized feedback on strategies and listings</li>
                 <li>Live problem-solving for attendees</li>
@@ -165,7 +165,7 @@ export default function CourseTabs() {
 
             <div className="bg-green-50 p-4 rounded-lg">
               <p><strong>Inclusions for Participants:</strong></p>
-              <ul className="list-disc list-inside space-y-1 mt-2">
+              <ul className="list-disc list-inside space-y-1 mt-2 list-outside ml-5">
                 <li>Amazon Course Workbook</li>
                 <li>SOP Templates for Account Management, Advertising, and Reviews</li>
                 <li>Cheat Sheet: "Amazon Playbook for D2C Brands" (Growth Checklist + Tools + Frameworks)</li>

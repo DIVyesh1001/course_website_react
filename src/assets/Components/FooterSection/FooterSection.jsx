@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -10,77 +10,70 @@ import {
   FaTelegramPlane,
 } from 'react-icons/fa';
 
-import { Link } from 'react-router';
+import React from 'react';
 
-export default function FooterSection() {
+export default function DatumFooter() {
   return (
-    <footer className=" bg-white text-slate-700" data-aos="fade-in">
-      {/* Top area: logo + social */}
-      {/* <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between"> */}
+    <footer data-aos="fade-up" className="bg-gray-50 py-16 px-4">
+      <div className="max-w-4xl mx-auto text-center">
         {/* Logo */}
-        {/* <div className="mb-6 md:mb-0">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src='https://i.ibb.co/bgQdHcVb/comercify360-Logocropped.png'
-              className="h-8 w-auto"
-            />
+        <div className="mb-12 ">
+          <div className="inline-flex items-center space-x-2">
+            <img src="https://i.ibb.co/bgQdHcVb/comercify360-Logocropped.png" className='h-8 w-auto' alt="" />
+          </div>
+        </div>
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center space-x-6 mb-12">
+          <a
+            href="#"
+            className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
+            aria-label="Twitter"
+          >
+            <FaTwitter className="w-5 h-5" />
           </a>
-        </div> */}
-        
-      {/* </div> */}
+          <a
+            href="#"
+            className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="w-5 h-5" />
+          </a>
+          <a
+            href="#"
+            className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
+            aria-label="RSS Feed"
+          >
+            <FaTelegramPlane className="w-5 h-5" />
+          </a>
+        </div>
 
-      {/* Main columns */}
-      {/* <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 pb-12"> */}
-        {/* Pages */}
-        {/* <div>
-          <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Pages</h4>
-          <ul className="space-y-2 text-base">
-            <li className="flex items-center">
-              <Link to='/' className="hover:underline">
-                Home
-              </Link>
-            </li>
-            <li className="flex items-center">
-              <Link to="/course" className="hover:underline">
-                Courses
-              </Link>
-              <span className="ml-2 bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded">New</span>
-            </li>
-          </ul>
-        </div> */}
+        {/* Navigation Links */}
+        <div className="flex justify-center space-x-8 mb-12 flex-wrap">
+          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Datum
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Sign up
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Terms
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Privacy
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Contact
+          </a>
+        </div>
 
-        
-
-        {/* Newsletter */}
-        {/* <div>
-          <h4 className="text-sm font-semibold text-red-600 uppercase mb-4">Newsletter</h4>
-          <p className="text-base text-slate-600 mb-6">
-            Stay ahead of the curve with the latest in Amazon Ads, marketplace trends, and growth strategies.
-            Get curated insights, expert tips, and real-world brand case studies - delivered straight to your inbox.
-
-          </p>
-          <form className="flex flex-col sm:flex-row items-center gap-4">
-            <input
-              type="email"
-              placeholder="Enter your Email"
-              className="flex-1 px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-600"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-red-600 text-white font-semibold rounded-full shadow hover:bg-red-700 transition"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div> */}
-      {/* </div> */}
-
-      {/* Footer bottom */}
-      <div className="border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-slate-500 text-center">
-          Copyright © 2023 Commercify360 All rights reserved
+        {/* Copyright */}
+        <div className="text-gray-500 text-sm">
+          {"2025 ©  – "}
+          <a href="https://commercify360.com/" className="underline hover:text-gray-700">
+            Commercify360
+          </a>
+          {' All right reserved'}
         </div>
       </div>
     </footer>

@@ -36,7 +36,7 @@ export default function CourseBuySection() {
       </div>
 
       {/* Right Section */}
-      <div className="bg-white sticky top-10 rounded-xl shadow-md p-8 space-y-6">
+      <div className="bg-stone-100 sticky top-10 rounded-xl shadow-md p-8 space-y-6">
         <h2 className="text-xl font-semibold text-slate-900">Get the course today</h2>
 
         <input
@@ -45,7 +45,7 @@ export default function CourseBuySection() {
           placeholder="Your Name"
           value={userData.name}
           onChange={handleChange}
-          className="w-full border border-slate-300 rounded-3xl px-4 py-3 text-slate-700"
+          className="w-full border border-black rounded-3xl px-4 py-3 text-black"
         />
         <input
           type="email"
@@ -53,7 +53,7 @@ export default function CourseBuySection() {
           placeholder="Your Email"
           value={userData.email}
           onChange={handleChange}
-          className="w-full border border-slate-300 rounded-3xl px-4 py-3 text-slate-700"
+          className="w-full border border-black rounded-3xl px-4 py-3 text-black"
         />
         <input
           type="tel"
@@ -61,7 +61,7 @@ export default function CourseBuySection() {
           placeholder="Phone Number"
           value={userData.phone}
           onChange={handleChange}
-          className="w-full border border-slate-300 rounded-3xl px-4 py-3 text-slate-700"
+          className="w-full border border-black rounded-3xl px-4 py-3 text-black"
         />
         <input
           type="text"
@@ -69,7 +69,7 @@ export default function CourseBuySection() {
           placeholder="LinkedIn Profile URL"
           value={userData.linkedin}
           onChange={handleChange}
-          className="w-full border border-slate-300 rounded-3xl px-4 py-3 text-slate-700"
+          className="w-full border border-black rounded-3xl px-4 py-3 text-black"
         />
 
         <RazorpayButton userData={userData} disabled={!formValid} />

@@ -28,21 +28,23 @@ export default function CourseTabs() {
               You’ll dive deep into Sponsored Ads, Amazon DSP, Sponsored TV, keyword and audience targeting, campaign optimization, and more - using the most current 2025 ad console interface.
             </p>
             <p><strong>What Makes This Course Different?</strong></p>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li><strong>Live Learning, Not Pre-Recorded:</strong> Engage directly with Renu Bisht, Founder of Commercify360, as she shares real-world strategies that have helped 200+ brands grow on Amazon.</li>
               <li><strong>Built for Indian & Global Brands:</strong> While tailored for Indian SMBs and D2C businesses, the course applies globally across any Amazon marketplace.</li>
               <li><strong>Real Campaigns. Real Case Studies:</strong> Every module is rooted in practical execution—from setting up your first Sponsored Product ad to advanced DSP tactics.</li>
               <li><strong>Structured & Actionable:</strong> This isn’t theory-heavy or overwhelming. You’ll follow a step-by-step system and complete assignments as you go, so by the end, your campaigns are live and optimized.</li>
               <li><strong>Community + Support:</strong> Get exclusive access to a WhatsApp group for learner discussions, direct support, and post-course networking.</li>
             </ul>
-            <p><strong>What’s Included</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Live Zoom-based instructor-led sessions</li>
-              <li>Campaign setup walkthroughs (inside the 2025 Amazon Ads Console)</li>
-              <li>Templates, worksheets & optimization checklists</li>
-              <li>Certificate of completion</li>
-              <li>Access to bonus webinars + advanced workshops</li>
-            </ul>
+            <div className='bg-stone-200 p-4 rounded-lg'>
+              <p><strong>What’s Included</strong></p>
+              <ul className="list-disc list-inside space-y-1 list-outside ml-5">
+                <li>Live Zoom-based instructor-led sessions</li>
+                <li>Campaign setup walkthroughs (inside the 2025 Amazon Ads Console)</li>
+                <li>Templates, worksheets & optimization checklists</li>
+                <li>Certificate of completion</li>
+                <li>Access to bonus webinars + advanced workshops</li>
+              </ul>
+            </div>
           </div>
         );
       case 'content':
@@ -51,8 +53,8 @@ export default function CourseTabs() {
             <p>
               This comprehensive course is designed for D2C brand owners, retail founders, and marketers looking to unlock growth on Amazon India. Over two core sessions and one Q&A session, the program covers everything from foundational setup to advertising, conversion optimization, and scaling strategies.
             </p>
-            
-            <div className="bg-stone-50 p-4 rounded-lg">
+
+            <div className="bg-stone-200 p-4 rounded-lg">
               <p><strong>Session 1 – Day 1 (4 Hours)</strong></p>
               <p className="text-lg text-stone-600 italic">Objective: Lay a strong foundation for succeeding on Amazon by understanding the ecosystem, setting up correctly, and launching effective advertising.</p>
             </div>
@@ -103,7 +105,7 @@ export default function CourseTabs() {
 
             <p className="bg-red-50 p-3 rounded-lg"><strong>📝 Assignment #1:</strong> Setup Amazon Seller Central + Draft Ads Strategy Playbook</p>
 
-            <div className="bg-stone-50 p-4 rounded-lg">
+            <div className="bg-stone-200 p-4 rounded-lg">
               <p><strong>Session 2 – Day 2 (4 Hours)</strong></p>
               <p className="text-lg text-stone-600 italic">Objective: Learn how to drive conversions, scale systematically, and leverage growth levers.</p>
             </div>
@@ -154,7 +156,7 @@ export default function CourseTabs() {
               </ul>
             </div>
 
-            <div className="bg-stone-50 p-4 rounded-lg">
+            <div className="bg-stone-200 p-4 rounded-lg">
               <p><strong>Session 3 – Open Q&A (Flexible Duration)</strong></p>
               <ul className="list-disc list-inside space-y-1 mt-2 list-outside ml-5">
                 <li>Open-ended session for clarifying doubts</li>
@@ -187,11 +189,10 @@ export default function CourseTabs() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`py-2 px-3 text-xl font-medium transition-colors duration-200 ${
-              activeTab === tab.id
+            className={`py-2 px-3 text-xl font-medium transition-colors duration-200 ${activeTab === tab.id
                 ? 'text-red-500 border-b-2 border-red-500'
                 : 'text-gray-600 hover:text-red-400'
-            }`}
+              }`}
           >
             {tab.label}
           </button>

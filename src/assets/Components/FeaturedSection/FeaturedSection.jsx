@@ -6,7 +6,7 @@ export default function FeaturedSection() {
                 <h2 class=" text-4xl p-5 mb-5 sm:mb-2 font-bold text-center">Featured in:</h2>
 
                 <div
-                    class=" bg-gray-100 mx-auto w-full max-w-4xl bg-white justify-center items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    class=" bg-gray-100 mx-auto w-full max-w-4xl bg-white justify-center items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                     <div>
                         <img alt="" class="h-20  mx-auto" src="https://logowik.com/content/uploads/images/the-ken3642.logowik.com.webp" />
                     </div>
@@ -18,6 +18,12 @@ export default function FeaturedSection() {
                     </div>
                     <div>
                         <img alt="" class="h-20  mx-auto" src="https://yt3.ggpht.com/a-/AAuE7mDZ7SL5oKXTZs_NurZtv_mvXY7Mm893f0DAoQ=s900-mo-c-c0xffffffff-rj-k-no" />
+                    </div>
+                    <div>
+                        <img alt="" class="h-20  mx-auto" src="https://i.postimg.cc/TPS9pL0C/images.png" />
+                    </div>
+                    <div>
+                        <img alt="" class="h-20  mx-auto" src="https://i.postimg.cc/1X1rrkLF/IAMAI.png" />
                     </div>
                     {/* <a target="_blank" href="">
                         <img alt="" class="h-20  mx-auto" src="https://www.svgrepo.com/show/443206/brand-line.svg" />

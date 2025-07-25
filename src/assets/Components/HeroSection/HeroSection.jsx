@@ -7,10 +7,10 @@ export default function HeroSection() {
             <div className=" max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 px-1 py-5">
                 {/* Left Side */}
                 <div>
-                    <h1 className="font-regular text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                    <h1 className="font-regular text-2xl lg:text-6xl font-bold text-slate-900 leading-tight">
                         Master Amazon Ads: <br /> From Zero to Pro
                     </h1>
-                    <p className="mt-6 text-xl text-slate-600 leading-relaxed">
+                    <p className="mt-6 text-lg lg:text-xl text-slate-600 leading-relaxed">
                         Learn how to drive traffic, boost conversions, and scale your brand using Amazon’s powerful ad ecosystem.
                         
                     <p className='font-bold mt-3'>🛍️ Perfect for sellers, marketers, and agencies.</p>

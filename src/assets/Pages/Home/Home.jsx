@@ -8,6 +8,7 @@ import BrandsSection from '../../Components/BrandsSection/BrandsSection'
 import QASection from '../../Components/QASection/QASection'
 import FeaturedSection from '../../Components/FeaturedSection/FeaturedSection'
 import GetMoreSection from '../../Components/GetMoreSection/GetMoreSection'
+import ImagesSection from '../../Components/ImagesSection/ImagesSection'
 export default function Home() {
     return (
         <div>
@@ -18,6 +19,7 @@ export default function Home() {
             <LearnSection />
             <GetMoreSection/>
             <BrandsSection/>
+            <ImagesSection/>
             <TestimonialSection />
             <FAQSection />
         </div>

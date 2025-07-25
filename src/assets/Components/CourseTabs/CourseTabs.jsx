@@ -14,7 +14,7 @@ export default function CourseTabs() {
       case 'about':
         return (
           <div className="text-xl text-stone-700 space-y-3 leading-relaxed">
-            <p><strong>Master Amazon Ads: From Setup to Scale</strong></p>
+            <p className='text-3xl'><strong>Master Amazon Ads: From Setup to Scale</strong></p>
             <p>
               This live, instructor-led course is designed to help founders, marketers, and brand teams unlock the full power of Amazon’s advertising ecosystem. Whether you’re launching your first campaign or looking to scale existing efforts, this course equips you with the skills, tools, and strategies needed to drive real performance.
             </p>
@@ -27,7 +27,7 @@ export default function CourseTabs() {
             <p>
               You’ll dive deep into Sponsored Ads, Amazon DSP, Sponsored TV, keyword and audience targeting, campaign optimization, and more - using the most current 2025 ad console interface.
             </p>
-            <p><strong>What Makes This Course Different?</strong></p>
+            <p className='text-3xl'><strong>What Makes This Course Different?</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li><strong>Live Learning, Not Pre-Recorded:</strong> Engage directly with Renu Bisht, Founder of Commercify360, as she shares real-world strategies that have helped 200+ brands grow on Amazon.</li>
               <li><strong>Built for Indian & Global Brands:</strong> While tailored for Indian SMBs and D2C businesses, the course applies globally across any Amazon marketplace.</li>
@@ -36,7 +36,7 @@ export default function CourseTabs() {
               <li><strong>Community + Support:</strong> Get exclusive access to a WhatsApp group for learner discussions, direct support, and post-course networking.</li>
             </ul>
             <div className='bg-stone-200 p-4 rounded-lg'>
-              <p><strong>What’s Included</strong></p>
+              <p ><strong>What’s Included</strong></p>
               <ul className="list-disc list-inside space-y-1 list-outside ml-5">
                 <li>Live Zoom-based instructor-led sessions</li>
                 <li>Campaign setup walkthroughs (inside the 2025 Amazon Ads Console)</li>
@@ -59,7 +59,7 @@ export default function CourseTabs() {
               <p className="text-lg text-stone-600 italic">Objective: Lay a strong foundation for succeeding on Amazon by understanding the ecosystem, setting up correctly, and launching effective advertising.</p>
             </div>
 
-            <p><strong>1. Introduction to Amazon Ecosystem (1.5 Hours)</strong></p>
+            <p className='text-3xl'><strong>1. Introduction to Amazon Ecosystem (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>The role of Amazon in the D2C ecosystem: How Amazon complements D2C, omnichannel, and offline strategies</li>
               <li>How Amazon differs from Shopify & Offline Retail (Traffic ownership, CAC, Ecosystem Control)</li>
@@ -77,7 +77,7 @@ export default function CourseTabs() {
               <li>Case Study: A D2C brand that scaled to ₹1Cr+/month using Amazon effectively</li>
             </ul>
 
-            <p><strong>2. Setting Up for Success (1 Hour)</strong></p>
+            <p className='text-3xl'><strong>2. Setting Up for Success (1 Hour)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Seller Central vs Vendor Central: Which suits your business model</li>
               <li>Seller account setup checklist (GST, banking, trademarks, brand registry, barcodes)</li>
@@ -92,7 +92,7 @@ export default function CourseTabs() {
               <li>Listing Hygiene SOP: Avoid common pitfalls that impact discoverability</li>
             </ul>
 
-            <p><strong>3. Amazon Advertising Essentials (1.5 Hours)</strong></p>
+            <p className='text-3xl'><strong>3. Amazon Advertising Essentials (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Ad Types Explained: Sponsored Products (SP), Sponsored Brands (SB), Sponsored Display (SD)</li>
               <li>Auto vs Manual Campaign Structures</li>
@@ -110,7 +110,7 @@ export default function CourseTabs() {
               <p className="text-lg text-stone-600 italic">Objective: Learn how to drive conversions, scale systematically, and leverage growth levers.</p>
             </div>
 
-            <p><strong>1. Conversion Optimization & Reviews (1 Hour)</strong></p>
+            <p className='text-3xl'><strong>1. Conversion Optimization & Reviews (1 Hour)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Anatomy of High-Converting Listings:
                 <ul className="list-disc list-inside ml-6 mt-1 list-outside ml-5">
@@ -123,7 +123,7 @@ export default function CourseTabs() {
               <li>Live Analysis: Real listing teardown (before & after optimization)</li>
             </ul>
 
-            <p><strong>2. Scaling & Growth Hacks (1.5 Hours)</strong></p>
+            <p className='text-3xl'><strong>2. Scaling & Growth Hacks (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Winning the Amazon Choice Badge & BSR Game</li>
               <li>Promotional Strategies: Lightning Deals, Coupons, Prime Day Playbook</li>
@@ -139,7 +139,7 @@ export default function CourseTabs() {
               </li>
             </ul>
 
-            <p><strong>3. Bonus Tips, Live Audit, and Q&A (1.5 Hours)</strong></p>
+            <p className='text-3xl'><strong>3. Bonus Tips, Live Audit, and Q&A (1.5 Hours)</strong></p>
             <ul className="list-disc list-inside space-y-1 list-outside ml-5">
               <li>Tools every Amazon founder must use</li>
               <li>7 Common Mistakes in Amazon Growth Journey</li>
@@ -157,7 +157,7 @@ export default function CourseTabs() {
             </div>
 
             <div className="bg-stone-200 p-4 rounded-lg">
-              <p><strong>Session 3 – Open Q&A (Flexible Duration)</strong></p>
+              <p ><strong>Session 3 – Open Q&A (Flexible Duration)</strong></p>
               <ul className="list-disc list-inside space-y-1 mt-2 list-outside ml-5">
                 <li>Open-ended session for clarifying doubts</li>
                 <li>Personalized feedback on strategies and listings</li>

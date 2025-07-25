@@ -11,7 +11,15 @@ export default function CourseHeroSection() {
                     </h1>
                     <p className="mt-6 text-xl text-slate-600 leading-relaxed">
                         This live, instructor-led course is designed to help founders, marketers, and brand teams unlock the full power of Amazon’s advertising ecosystem. Whether you’re launching your first campaign or looking to scale existing efforts, this course equips you with the skills, tools, and strategies needed to drive real performance.
-
+                        
+                    </p>
+                    <p className="mt-6 text-xl text-slate-600 leading-relaxed">
+                        👥 Interactive & live Q&A, 📚 10 Hours of Learning,  
+                        
+                    </p>
+                    <p className="mt-3 text-xl text-slate-600 leading-relaxed">
+                         Dates: August 16th and 17th, 2025
+                        
                     </p>
 
 

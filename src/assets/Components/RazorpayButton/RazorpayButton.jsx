@@ -93,7 +93,7 @@ export default function RazorpayButton({ userData, disabled }) {
             : 'bg-red-600 hover:bg-red-700 hover:scale-90 text-white cursor-pointer'
         }`}
       >
-        Pay ₹4999 + GST <strike>₹14999</strike>
+        Pay ₹4,999 + GST <strike>₹14,999</strike>
       </button>
 
       {showSuccess && (

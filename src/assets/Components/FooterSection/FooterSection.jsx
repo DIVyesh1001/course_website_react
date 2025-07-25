@@ -26,43 +26,43 @@ export default function DatumFooter() {
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-6 mb-12">
           <a
-            href="#"
+            href="https://www.linkedin.com/company/commercify360/"
             className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
             aria-label="Twitter"
           >
-            <FaTwitter className="w-5 h-5" />
+            <FaLinkedinIn className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/commercify360?igsh=YTA4d3dvbDlyMGxw"
             className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
             aria-label="Instagram"
           >
             <FaInstagram className="w-5 h-5" />
           </a>
-          <a
+          {/* <a
             href="#"
             className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 text-gray-600 hover:text-gray-800"
             aria-label="RSS Feed"
           >
             <FaTelegramPlane className="w-5 h-5" />
-          </a>
+          </a> */}
         </div>
 
         {/* Navigation Links */}
         <div className="flex justify-center space-x-8 mb-12 flex-wrap">
           <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
-            Datum
+            Commercify360
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
-            Sign up
-          </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+          <a href="https://commercify360.com/Terms" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
             Terms
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
-            Privacy
+          <a href="https://commercify360.com/refund-policy" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Refund Policy
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+          {/* <a href="#" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
+            Privacy
+          </a> */}
+          <a href="https://commercify360.com/contact" className="text-gray-600 hover:text-gray-800 underline transition-colors duration-200">
             Contact
           </a>
         </div>

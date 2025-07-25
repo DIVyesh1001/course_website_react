@@ -12,7 +12,7 @@ export default function ImagesSection() {
             id: 1,
             name: "Sarah Johnson",
             title: "Marketing Director, TechCorp",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+            image: "https://i.postimg.cc/SRgpnhXk/Whats-App-Image-2025-07-25-at-2-35-43-PM-1.jpg",
             rating: 5,
             text: "The service was exceptional from start to finish. The team went above and beyond to deliver exactly what we needed."
         },
@@ -20,7 +20,7 @@ export default function ImagesSection() {
             id: 2,
             name: "Michael Chen",
             title: "CTO, InnovateSoft",
-            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+            image: "https://i.postimg.cc/SRgpnhXk/Whats-App-Image-2025-07-25-at-2-35-43-PM-1.jpg",
             rating: 4.5,
             text: "We've seen a 40% increase in productivity since implementing their solution. The onboarding process was seamless."
         },
@@ -28,7 +28,7 @@ export default function ImagesSection() {
             id: 3,
             name: "Emma Rodriguez",
             title: "CEO, DesignHub",
-            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+            image: "https://i.postimg.cc/bw2KhbRz/Whats-App-Image-2025-07-25-at-2-35-42-PM.jpg",
             rating: 4,
             text: "Their attention to detail and customer support is unmatched. We've partnered with them for all our digital needs."
         },
@@ -36,7 +36,7 @@ export default function ImagesSection() {
             id: 4,
             name: "David Wilson",
             title: "Operations Manager, GlobalLogix",
-            image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+            image: "https://i.postimg.cc/bw2KhbRz/Whats-App-Image-2025-07-25-at-2-35-42-PM.jpg",
             rating: 5,
             text: "The ROI was evident within the first quarter. Their platform has become indispensable to our operations."
         }
@@ -124,7 +124,7 @@ export default function ImagesSection() {
         <div className="bg-gray-50 min-h-screen flex items-center justify-center p-4">
             <div className="max-w-7xl w-full mx-auto px-4">
                 <div className="flex flex-col sm:flex-row text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4 ml-5">Event Edits</h2>
                     {/* <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div> */}
                     <p className="text-xl text-left text-gray-600 max-w-2xl mx-auto">
                         Hear what our customers say about their experience with our products and services.
@@ -172,24 +172,15 @@ export default function ImagesSection() {
                                     className={`flex-shrink-0 px-4  ${visibleCards === 1 ? 'w-full' : visibleCards === 2 ? 'w-1/2' : 'w-1/3'
                                         }`}
                                 >
-                                    <div className="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
-                                        <div className="flex items-center mb-4">
-                                            <div className="flex space-x-1">
-                                                {renderStars(testimonial.rating)}
-                                            </div>
-                                        </div>
-                                        <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
-                                        <div className="flex items-center">
-                                            <img
+                                    <div className="bg-white p-5 rounded-xl  shadow-lg h-full border border-gray-100 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                                        <img
                                                 src={testimonial.image}
                                                 alt={testimonial.name}
-                                                className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100"
+                                                className="rounded-sm place-self-center w-fit  object-contain  border-2 border-indigo-100"
                                             />
-                                            <div>
-                                                <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                                                <p className="text-gray-500 text-sm">{testimonial.title}</p>
-                                            </div>
-                                        </div>
+                                            <p className='text-center text-2xl mt-2'>
+                                                {testimonial.name}
+                                            </p>
                                     </div>
                                 </div>
                             ))}

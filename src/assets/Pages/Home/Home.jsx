@@ -19,8 +19,8 @@ export default function Home() {
             <LearnSection />
             <GetMoreSection/>
             <BrandsSection/>
-            <ImagesSection/>
             <TestimonialSection />
+            <ImagesSection/>
             <FAQSection />
         </div>
     )
